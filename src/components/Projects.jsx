@@ -47,9 +47,11 @@ const Projects = () => {
                             </div>
 
                             <div className="project-links">
-                                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                                    <FaGithub /> GitHub
-                                </a>
+                                {project.githubUrl && (
+                                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
+                                        <FaGithub /> GitHub
+                                    </a>
+                                )}
                                 {project.liveUrl && (
                                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
                                         <FaExternalLinkAlt /> Live Demo

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBriefcase, FaAward } from 'react-icons/fa';
+import { experience } from '../data/experience';
 import './About.css';
 
 const About = () => {
@@ -14,6 +15,8 @@ const About = () => {
                         <p>
                             I'm a passionate Python Developer and AI/ML Engineer with professional experience at <strong>Aim Technologies</strong>,
                             where I conducted hands-on training sessions and developed scalable web applications for international clients.
+                            Today I deliver workshops and faculty development programmes on AI, Prompt Engineering, Python for Finance and
+                            DSA at institutions including <strong>Malla Reddy University</strong> and <strong>Kaveri University</strong>.
                         </p>
                         <p>
                             I have the unique privilege of being the <strong className="gradient-text">youngest member of the Python R&D team</strong> at
@@ -31,14 +34,14 @@ const About = () => {
                                 <FaBriefcase className="highlight-icon" />
                                 <div>
                                     <h4>Professional Experience</h4>
-                                    <p>4 diverse roles spanning development, training, and research</p>
+                                    <p>{experience.length} diverse roles spanning development, training, and research</p>
                                 </div>
                             </div>
                             <div className="highlight-item">
                                 <FaAward className="highlight-icon" />
                                 <div>
                                     <h4>Award Winner</h4>
-                                    <p>National Level IT Exhibition - Deep Fake Detection System</p>
+                                    <p>Best Application Award, Academic Topper 2024, and National Level IT Exhibition winner</p>
                                 </div>
                             </div>
                         </div>

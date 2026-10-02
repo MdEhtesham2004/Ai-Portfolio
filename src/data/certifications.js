@@ -19,6 +19,26 @@ export const certifications = [
 
 export const achievements = [
     {
+        id: 3,
+        title: "Best Application Award",
+        organization: "Pragnya Degree College (Osmania University)",
+        description: "Built a student-focused academic platform during graduation that centralizes semester-wise subjects, syllabi, model question papers, reference material, automatic result calculation, and AI-based learning features. Awarded Best Application - and the platform continues to be used by the college today.",
+        date: "BCA (2022 - 2025)",
+        type: "achievement",
+        award: "Best Application",
+        image: "/media/achievements/best-application-award.webp"
+    },
+    {
+        id: 4,
+        title: "Academic Topper - 2024",
+        organization: "Pragnya Degree College (Osmania University)",
+        description: "Recognized as Academic Topper during graduation for academic excellence, felicitated at Pragnya Spectranza 2024.",
+        date: "2024",
+        type: "achievement",
+        award: "Academic Topper",
+        image: "/media/achievements/academic-topper-2024.webp"
+    },
+    {
         id: 1,
         title: "Python Research & Development Team Member",
         organization: "AIMSCS, University of Hyderabad & Aim Technologies",
@@ -34,6 +54,7 @@ export const achievements = [
         description: "Secured cash prize at Technocrats Elite 7.0, a National Level IT Exhibition. Developed a Deep Fake Image Detection System integrating Machine Learning, Deep Learning, and NLP techniques to identify AI-generated content.",
         date: "2024",
         type: "achievement",
-        award: "Cash Prize"
+        award: "Cash Prize",
+        image: "/media/achievements/technocrats-elite-7.webp"
     }
 ];

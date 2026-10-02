@@ -1,30 +1,33 @@
-import React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Certifications from './components/Certifications';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React, { useEffect } from 'react';
+import { initSmoothScroll, initMagnetic } from './lib/motion';
+import Loader from './sections/Loader';
+import Hero from './sections/Hero';
+import Trainings from './sections/Trainings';
+import Expertise from './sections/Expertise';
+import Products from './sections/Products';
+import Projects from './sections/Projects';
+import About from './sections/About';
+import Contact from './sections/Contact';
+import NavPill from './sections/NavPill';
 
 function App() {
+  useEffect(() => initSmoothScroll(), []);
+  useEffect(() => initMagnetic(), []);
+
   return (
-    <div className="App">
-      <Navbar />
+    <>
+      <Loader />
       <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
-      <Certifications />
+      <main>
+        <Trainings />
+        <Expertise />
+        <Products />
+        <Projects />
+        <About />
+      </main>
       <Contact />
-      <Footer />
-    </div>
+      <NavPill />
+    </>
   );
 }
 

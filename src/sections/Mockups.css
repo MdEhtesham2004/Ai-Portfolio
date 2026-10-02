@@ -1,0 +1,241 @@
+.mock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 7%;
+    background:
+        radial-gradient(circle at 75% 15%, rgba(143, 227, 201, 0.2), transparent 55%),
+        radial-gradient(circle at 10% 90%, rgba(244, 239, 226, 0.08), transparent 50%),
+        var(--ink-3);
+    font-size: clamp(8px, 0.8vw, 11.5px);
+}
+
+.mock-window {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--cream-12);
+    background: #161a18;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    transition: transform 0.6s var(--ease);
+}
+
+.product:hover .mock-window {
+    transform: translateY(-6px) rotate(-0.6deg);
+}
+
+.mock-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.9em 1.1em;
+    border-bottom: 1px solid var(--cream-12);
+    color: var(--cream-60);
+    font-size: 0.95em;
+}
+
+.mock-bar i {
+    width: 0.75em;
+    height: 0.75em;
+    border-radius: 50%;
+    background: var(--cream-12);
+}
+
+.mock-bar span {
+    margin-left: 0.8em;
+}
+
+.mock-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    padding: 1.3em;
+    color: var(--cream-80);
+}
+
+.mock-h {
+    display: block;
+    margin-bottom: 0.7em;
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cream-60);
+}
+
+.mock-card {
+    padding: 1em;
+    border-radius: 7px;
+    border: 1px solid var(--cream-12);
+    background: rgba(244, 239, 226, 0.04);
+}
+
+/* SmartScraps admin */
+.mock-kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7em;
+}
+
+.mock-kpis span {
+    display: block;
+    font-size: 0.85em;
+    color: var(--cream-60);
+    margin-bottom: 0.3em;
+}
+
+.mock-kpis strong {
+    font-size: 1.7em;
+    letter-spacing: -0.02em;
+    color: var(--cream);
+}
+
+.mock-split {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 0.7em;
+}
+
+.mock-bars {
+    width: 100%;
+    height: 7em;
+}
+
+.mock-bars rect {
+    fill: var(--accent);
+    opacity: 0.85;
+}
+
+.mock-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55em;
+    list-style: none;
+}
+
+.mock-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1em;
+}
+
+.mock-list b {
+    font-weight: 600;
+    color: var(--cream);
+}
+
+.mock-list em,
+.mock-slots em {
+    padding: 0.2em 0.65em;
+    border-radius: 99px;
+    border: 1px solid var(--cream-12);
+    font-style: normal;
+    font-size: 0.85em;
+    color: var(--cream-80);
+    white-space: nowrap;
+}
+
+.mock-list em.ok,
+.mock-slots em.on {
+    border-color: transparent;
+    background: rgba(143, 227, 201, 0.16);
+    color: var(--accent);
+}
+
+.mock-list em.go {
+    border-color: transparent;
+    background: rgba(244, 196, 120, 0.16);
+    color: #f4c478;
+}
+
+.mock-list em.warn {
+    border-color: transparent;
+    background: rgba(244, 140, 120, 0.16);
+    color: #f6a08c;
+}
+
+.mock-slots div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.mock-slots em.full {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* MS Credit Panel: Telegram chat synced to a dashboard */
+.mock-credit {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.8fr auto 1.25fr;
+    align-items: center;
+    gap: 1em;
+}
+
+.mock-phone {
+    border-radius: 1.6em;
+    border: 1px solid var(--cream-12);
+    background: #161a18;
+    padding: 0.7em;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+}
+
+.mock-phone-top {
+    padding: 0.6em 0.8em 0.9em;
+    font-weight: 700;
+    font-size: 1.05em;
+    color: var(--cream);
+    border-bottom: 1px solid var(--cream-12);
+}
+
+.mock-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    padding: 0.9em 0.3em 0.4em;
+}
+
+.mock-chat p {
+    max-width: 85%;
+    padding: 0.55em 0.8em;
+    border-radius: 1em 1em 1em 0.25em;
+    background: var(--ink-3);
+    font-size: 1em;
+    line-height: 1.35;
+    color: var(--cream);
+}
+
+.mock-chat p.me {
+    align-self: flex-end;
+    border-radius: 1em 1em 0.25em 1em;
+    background: rgba(143, 227, 201, 0.2);
+    color: var(--accent);
+}
+
+.mock-sync {
+    font-size: 2em;
+    color: var(--accent);
+}
+
+.mock-table li {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 1em;
+}
+
+.mock-table span {
+    font-weight: 600;
+    color: var(--cream);
+}
+
+@media (max-width: 600px) {
+    .mock {
+        font-size: 7px;
+    }
+}

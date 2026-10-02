@@ -1,0 +1,53 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--ink);
+    color: var(--cream);
+}
+
+.loader-word {
+    display: flex;
+    overflow: hidden;
+    font-size: clamp(3rem, 13vw, 12rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+}
+
+.loader-word span {
+    display: inline-block;
+}
+
+.loader-foot {
+    position: absolute;
+    left: var(--gutter);
+    right: var(--gutter);
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cream-60);
+}
+
+.loader-bar {
+    flex: 1;
+    height: 1px;
+    background: var(--cream-12);
+}
+
+.loader-bar i {
+    display: block;
+    height: 100%;
+    background: var(--cream);
+    transform: scaleX(0);
+    transform-origin: left;
+}

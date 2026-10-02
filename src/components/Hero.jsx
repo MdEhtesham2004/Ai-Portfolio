@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaDownload, FaArrowDown } from 'react-icons/fa';
+import { projects } from '../data/projects';
+import { experience } from '../data/experience';
+import { workshops } from '../data/workshops';
 import './Hero.css';
 
 const Hero = () => {
@@ -47,21 +50,26 @@ const Hero = () => {
                     </h2>
                     <p className="hero-description">
                         Passionate about building intelligent systems and training the next generation of developers.
-                        Former Python Developer and AI/ML Trainer at Aim Technologies, with experience collaborating
+                        Currently delivering AI, Python and DSA workshops and faculty development programmes at universities
+                        and engineering colleges. Previously Python Developer and AI/ML Trainer at Aim Technologies, collaborating
                         with the Python R&D team at University of Hyderabad.
                     </p>
 
                     <div className="hero-stats">
                         <div className="stat-item">
-                            <h3 className="gradient-text">15+</h3>
+                            <h3 className="gradient-text">{projects.length}+</h3>
                             <p>Projects</p>
                         </div>
                         <div className="stat-item">
-                            <h3 className="gradient-text">4</h3>
+                            <h3 className="gradient-text">{experience.length}</h3>
                             <p>Work Experiences</p>
                         </div>
                         <div className="stat-item">
-                            <h3 className="gradient-text">100+</h3>
+                            <h3 className="gradient-text">{workshops.length}</h3>
+                            <p>Workshops & FDPs</p>
+                        </div>
+                        <div className="stat-item">
+                            <h3 className="gradient-text">300+</h3>
                             <p>Students Trained</p>
                         </div>
                     </div>

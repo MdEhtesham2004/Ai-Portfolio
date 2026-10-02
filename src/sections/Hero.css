@@ -1,0 +1,229 @@
+.hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.hero-glow {
+    position: absolute;
+    inset: -20% -10% auto auto;
+    width: 75vw;
+    height: 75vw;
+    max-width: 1100px;
+    max-height: 1100px;
+    z-index: -1;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 40% 40%, rgba(143, 227, 201, 0.28), transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(244, 196, 120, 0.14), transparent 55%);
+    filter: blur(40px);
+    animation: hero-drift 14s ease-in-out infinite alternate;
+}
+
+@keyframes hero-drift {
+    from { transform: translate(0, 0) scale(1); }
+    to { transform: translate(-8%, 6%) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-glow {
+        animation: none;
+    }
+}
+
+/* Trial background portrait (toggle with SHOW_PORTRAIT in Hero.jsx) */
+.hero-portrait {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.hero-shade {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(ellipse at 50% 35%, transparent 0%, rgba(18, 21, 20, 0.5) 55%, var(--ink) 100%),
+        linear-gradient(to bottom, rgba(18, 21, 20, 0.35), rgba(18, 21, 20, 0.1) 40%, var(--ink) 100%);
+}
+
+.hero-top,
+.hero-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.82rem;
+    color: var(--cream-80);
+}
+
+.hero-top {
+    padding-top: 28px;
+}
+
+.hero-bottom {
+    padding-bottom: 32px;
+    align-items: flex-end;
+}
+
+.hero-logo {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    line-height: 1.15;
+    color: var(--cream);
+}
+
+.hero-email:hover {
+    color: var(--cream);
+}
+
+.hero-body {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+}
+
+.hero-line {
+    display: flex;
+    align-items: center;
+    gap: 0.12em;
+    overflow: hidden;
+    padding-bottom: 0.04em;
+}
+
+.hero-line-right {
+    justify-content: flex-end;
+}
+
+.hero-line-indent {
+    padding-left: 0.6em;
+}
+
+.hero-line-inner {
+    display: inline-block;
+}
+
+.hero-arrow {
+    font-weight: 400;
+}
+
+.hero-tile {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: clamp(96px, 9.5vw, 148px);
+    height: clamp(84px, 8.4vw, 130px);
+    margin: 0 0.04em;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--cream-12);
+    background:
+        radial-gradient(circle at 30% 0%, rgba(230, 223, 204, 0.14), transparent 60%),
+        linear-gradient(165deg, rgba(40, 46, 43, 0.92), rgba(24, 28, 26, 0.85));
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 1px 0 rgba(230, 223, 204, 0.08), 0 20px 40px rgba(0, 0, 0, 0.35);
+    font-size: clamp(0.6rem, 0.8vw, 0.74rem);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: var(--cream-60);
+}
+
+.hero-tile strong {
+    font-size: 2.3em;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--cream);
+}
+
+.hero-headline {
+    --hero-fs: clamp(3.2rem, 10.5vw, 10.5rem);
+    position: relative;
+}
+
+.hero-title {
+    font-size: var(--hero-fs);
+}
+
+/* Sits in the empty space left of the right-aligned "TECH" line */
+.hero-intro {
+    position: absolute;
+    left: 0;
+    top: calc(var(--hero-fs) * 1.08);
+    max-width: min(300px, 30%);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--cream-80);
+}
+
+/* Stats live in the tiles on desktop; keep them for screen readers */
+.hero-stats-mobile {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .hero-stats-mobile {
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 20px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--cream-80);
+    }
+
+    .hero-intro {
+        position: static;
+        max-width: 420px;
+        margin-top: 28px;
+        font-size: 1rem;
+    }
+
+    .hero-tile {
+        display: none;
+    }
+
+    .hero-line-indent {
+        padding-left: 0;
+    }
+}

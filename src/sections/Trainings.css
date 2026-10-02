@@ -1,0 +1,192 @@
+.trainings-head {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 16px 40px;
+    padding-bottom: 40px;
+    margin-bottom: clamp(48px, 8vh, 96px);
+    border-bottom: 1px solid var(--cream-12);
+}
+
+.trainings-head .label {
+    padding-top: 1.2em;
+}
+
+.trainings-title {
+    font-size: clamp(2.8rem, 7.4vw, 7rem);
+    font-weight: 800;
+    line-height: 0.92;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.trainings-title span {
+    display: inline-block;
+}
+
+.trainings-summary {
+    grid-column: 2;
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    color: var(--cream-80);
+}
+
+.trainings-summary strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* One block per university: name pinned on the left while its programmes scroll */
+.uni {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 40px;
+    padding: clamp(40px, 7vh, 80px) 0;
+    border-bottom: 1px solid var(--cream-12);
+}
+
+.uni-head {
+    position: sticky;
+    top: 40px;
+    align-self: start;
+}
+
+.uni-index {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+}
+
+.uni-name {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+}
+
+.uni-meta {
+    font-size: 0.85rem;
+    color: var(--cream-60);
+}
+
+.uni-programs {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(48px, 8vh, 88px);
+}
+
+/* Media shown as captured: no filters, cropped only to fit the frame */
+.program-media {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+.program-media.count-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.program-media img,
+.program-media video {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #000;
+}
+
+.program-media.count-1 img,
+.program-media.count-1 video {
+    aspect-ratio: 16 / 9;
+}
+
+.program-media video:not(.is-cropped) {
+    object-fit: contain;
+}
+
+/* Vertical reels with the footage in a centre band: a 16:9 cover crop shows just the footage */
+.program-media video.is-cropped {
+    object-fit: cover;
+}
+
+.program-role {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.program-title {
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.program-institution {
+    font-size: 0.95rem;
+    color: var(--cream-80);
+    margin-bottom: 14px;
+}
+
+.program-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.program-meta li,
+.program-topics li {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--cream-12);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    color: var(--cream-80);
+}
+
+.program-desc {
+    max-width: 62ch;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--cream-80);
+}
+
+.program-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.program-topics li {
+    border-color: transparent;
+    background: rgba(143, 227, 201, 0.1);
+    color: var(--accent);
+}
+
+@media (max-width: 900px) {
+    .trainings-head,
+    .uni {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .trainings-summary {
+        grid-column: 1;
+    }
+
+    .uni-head {
+        position: static;
+    }
+
+    .program-media.count-2 {
+        grid-template-columns: 1fr;
+    }
+}

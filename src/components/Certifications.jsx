@@ -33,6 +33,9 @@ const Certifications = () => {
                         <div className="achievement-grid">
                             {achievements.map((achievement) => (
                                 <div key={achievement.id} className="achievement-card glass-card">
+                                    {achievement.image && (
+                                        <img className="achievement-image" src={achievement.image} alt={achievement.title} loading="lazy" />
+                                    )}
                                     <div className="achievement-badge">
                                         <FaTrophy />
                                     </div>
