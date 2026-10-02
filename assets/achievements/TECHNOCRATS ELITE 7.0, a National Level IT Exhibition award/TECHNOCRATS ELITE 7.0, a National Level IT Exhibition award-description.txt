@@ -1,0 +1,5 @@
+🚀 Proud Moment for Our Team! 🚀
+I’m excited to share that my team and I participated in TECHNOCRATS ELITE 7.0, a National Level IT Exhibition organized by the Department of Computer Applications, St. Ann's College for Women, Mehdipatnam, in collaboration with NilTech Pvt. Ltd., Hyderabad—and we emerged winners by securing a cash prize!
+
+Our project focused on addressing a critical challenge: identifying AI-generated deep fake images. We developed a robust model that combines traditional machine learning, deep learning, and natural language processing (NLP) techniques to detect deep fakes effectively. This experience not only showcased our technical expertise but also highlighted the power of teamwork and innovation in solving real-world problems.
+A huge thank you to the organizers, faculty, and mentors for providing such an inspiring platform for growth and creativity. Proud of what we accomplished and excited for the future of technology!

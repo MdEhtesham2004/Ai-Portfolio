@@ -1,0 +1,13 @@
+Grateful to have conducted a 3-Day Workshop on Python for Finance for the students at Malla Reddy Engineering College for Women (Autonomous).
+
+During the sessions, we explored how Python and data-driven techniques can be used to understand financial markets and analyze stock market trends. The workshop focused on building strong foundational knowledge and introducing students to the role of technology and machine learning in financial analysis.
+
+The sessions covered:
+• Python for financial data analysis
+• Introduction to stock market data and market indicators
+• Understanding financial datasets using Python
+• Applying Deep learning concepts for market trend analysis
+
+It was wonderful to see the enthusiasm, curiosity, and active participation from the students throughout the workshop. I hope the insights and practical exposure gained during these three days encourage them to explore more opportunities at the intersection of finance, data science, and technology.
+
+A sincere thanks to Baddam Reddy for organizing this workshop and for continuously providing students with opportunities to learn real-world applications of technology.

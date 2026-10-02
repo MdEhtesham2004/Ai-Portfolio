@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaPython, FaJava, FaJs, FaDatabase, FaDocker, FaChartBar, FaBrain, FaRocket, FaLanguage, FaChartLine, FaProjectDiagram, FaCogs, FaTable, FaChartArea } from 'react-icons/fa';
-import { SiDjango, SiFlask, SiPandas, SiScikitlearn, SiPostgresql, SiStreamlit, SiNumpy, SiTensorflow } from 'react-icons/si';
+import { SiC, SiDjango, SiFlask, SiPandas, SiScikitlearn, SiPostgresql, SiStreamlit, SiNumpy, SiTensorflow } from 'react-icons/si';
 import { skills } from '../data/skills';
 import './Skills.css';
 
 const iconMap = {
     FaPython, FaJava, FaJs, FaDatabase, FaDocker, FaChartBar, FaBrain, FaRocket, FaLanguage, FaChartLine, FaProjectDiagram, FaCogs, FaTable, FaChartArea,
-    SiDjango, SiFlask, SiPandas, SiScikitlearn, SiPostgresql, SiStreamlit, SiNumpy, SiTensorflow,
+    SiC, SiDjango, SiFlask, SiPandas, SiScikitlearn, SiPostgresql, SiStreamlit, SiNumpy, SiTensorflow,
     // Icon aliases for skills.js
     SiPowerbi: FaChartArea,
     SiPlotly: FaChartArea,

@@ -1,5 +1,19 @@
 export const experience = [
     {
+        id: 5,
+        role: "Technical Trainer & Resource Person",
+        company: "Universities & Engineering Colleges",
+        location: "Hyderabad",
+        period: "2026 - Present",
+        current: true,
+        responsibilities: [
+            "Delivered a two-day AI & Prompt Engineering workshop for IV B.Tech students at Malla Reddy Engineering College for Women (Finishing School Programme)",
+            "Conducted a three-day Python for Finance workshop covering financial data analysis, market indicators, and deep learning for market trend analysis",
+            "Served as a resource person in a one-week Faculty Development Programme on AI-Driven Teaching Strategies at Malla Reddy University",
+            "Trained 200+ students in Data Structures & Algorithms using C at Kaveri University for placement readiness"
+        ]
+    },
+    {
         id: 1,
         role: "Python Developer and Python AI/ML Trainer",
         company: "Aim Technologies",

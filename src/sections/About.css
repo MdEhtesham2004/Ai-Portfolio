@@ -1,0 +1,259 @@
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 40px;
+    margin-bottom: clamp(80px, 14vh, 160px);
+}
+
+.about-intro .label {
+    padding-top: 1em;
+}
+
+/* Shared two-column rhythm: label on the left, content on the right */
+.about-grid,
+.about-start {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 40px;
+    padding: 40px 0;
+    border-top: 1px solid var(--cream-12);
+    margin-bottom: clamp(40px, 8vh, 80px);
+}
+
+.about-start {
+    align-items: start;
+}
+
+.about-start .about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    font-size: 1.05rem;
+}
+
+.about-story {
+    color: var(--cream-80);
+}
+
+/* Experience + education rows */
+.about-list > li {
+    border-bottom: 1px solid var(--cream-12);
+}
+
+.xp summary,
+.edu {
+    display: grid;
+    grid-template-columns: 190px 1fr 1fr 24px;
+    gap: 20px;
+    align-items: baseline;
+    padding: 20px 0;
+}
+
+.edu {
+    grid-template-columns: 190px 1fr 1fr;
+}
+
+.xp summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.xp summary::-webkit-details-marker {
+    display: none;
+}
+
+.xp summary:hover .xp-role {
+    color: var(--accent);
+}
+
+.xp-period {
+    font-size: 0.82rem;
+}
+
+.xp-role {
+    font-size: 1.08rem;
+    font-weight: 600;
+    transition: color 0.3s var(--ease);
+}
+
+.xp-company {
+    font-size: 0.9rem;
+}
+
+.xp-now {
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--ink);
+    font-size: 0.68rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.xp-toggle {
+    font-size: 1.3rem;
+    line-height: 1;
+    text-align: right;
+    transition: transform 0.3s var(--ease);
+}
+
+.xp[open] .xp-toggle {
+    transform: rotate(45deg);
+}
+
+.xp-points {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 0 24px 210px;
+    font-size: 0.92rem;
+    color: var(--cream-80);
+}
+
+.xp-points li::before {
+    content: '— ';
+    color: var(--cream-40);
+}
+
+/* Recognition */
+.awards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.award {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.award-media {
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.award-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    transition: filter 0.6s var(--ease), transform 0.8s var(--ease);
+}
+
+.award:hover .award-media img {
+    transform: scale(1.05);
+}
+
+.award-badge {
+    align-self: flex-start;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.award h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.award p {
+    font-size: 0.82rem;
+}
+
+.about-notes {
+    margin-top: 36px;
+    border-top: 1px solid var(--cream-12);
+}
+
+.about-notes li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--cream-12);
+    font-size: 0.9rem;
+}
+
+.about-notes strong {
+    font-weight: 600;
+}
+
+.about-notes span {
+    text-align: right;
+    font-size: 0.82rem;
+}
+
+.about-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 36px 0 0;
+    border-top: 1px solid var(--cream-12);
+    font-size: 1.05rem;
+    color: var(--cream-80);
+}
+
+@media (max-width: 900px) {
+    .about-intro,
+    .about-grid,
+    .about-start,
+    .about-start .about-story {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .xp summary,
+    .edu {
+        grid-template-columns: 1fr 24px;
+        gap: 4px 12px;
+    }
+
+    .edu {
+        grid-template-columns: 1fr;
+    }
+
+    .xp-period,
+    .xp-role,
+    .xp-company {
+        grid-column: 1;
+    }
+
+    .xp-toggle {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        align-self: center;
+    }
+
+    .xp-points {
+        padding-left: 0;
+    }
+
+    .awards {
+        grid-template-columns: 1fr;
+    }
+
+    .awards {
+        gap: 28px;
+    }
+
+    .about-notes li {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .about-notes span {
+        text-align: left;
+    }
+}

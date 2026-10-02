@@ -81,6 +81,7 @@
 
 .hero-stats {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: var(--spacing-xl);
     margin: var(--spacing-xl) 0;

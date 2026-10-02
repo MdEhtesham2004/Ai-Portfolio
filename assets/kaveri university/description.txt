@@ -1,0 +1,30 @@
+🚀 **Empowering 200+ Students with Data Structures & Algorithms using C!**
+
+I’m happy to share my experience of conducting a **Data Structures & Algorithms (DSA) training session using C Programming** at **Kaveri University**.
+
+👨‍💻 **Audience:** 200+ Students  
+📚 **Focus:** Data Structures & Algorithms using C  
+🎯 **Objective:** Strengthening programming fundamentals, logical thinking, and problem-solving skills for technical careers and placements.
+
+During the training, we explored how fundamental data structures and algorithms are implemented in C and, more importantly, how to approach programming problems logically.
+
+Some of the key areas covered included:
+
+🔹 Arrays & Strings  
+🔹 Linked Lists  
+🔹 Stacks & Queues  
+🔹 Searching & Sorting  
+🔹 Time & Space Complexity  
+🔹 Recursion  
+🔹 Problem-Solving & Algorithmic Thinking  
+🔹 Practical coding and implementation
+
+What made the session particularly exciting was the **energy and participation of 200+ students**. Interacting with such a large group of aspiring engineers and helping them strengthen their DSA fundamentals was a great learning experience for me as a trainer as well.
+
+💡 **DSA is not just about writing code — it's about learning how to think, optimize, and solve problems efficiently.**
+
+A big thank you to **Kaveri University** for the opportunity and to all the students for their enthusiasm and active participation.
+
+Looking forward to conducting more such **hands-on technical training sessions in Programming, DSA, Python, AI/ML, and Generative AI.**
+
+#DSA #DataStructures #Algorithms #CProgramming #Programming #TechnicalTraining #Coding #ProblemSolving #PlacementPreparation #EngineeringStudents #KaveriUniversity #Trainer #LearningAndDevelopment #CareerDevelopment
