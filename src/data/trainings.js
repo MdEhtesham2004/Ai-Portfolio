@@ -47,7 +47,7 @@ export const trainings = [
                 description: 'Trained university faculty as a resource person in a one-week FDP, sharing practical AI-powered teaching methods and how to align classroom learning with what the industry needs, followed by engaging discussions with the participants.',
                 media: [
                     { type: 'image', src: '/media/workshops/fdp-mallareddy-university.webp', alt: 'Mohammed Ehtesham as a resource person at the Malla Reddy University Faculty Development Programme', focus: 'center 8%' },
-                    { type: 'video', src: '/media/trainings/mru-fdp-ai-teaching.mp4', poster: '/media/trainings/mru-fdp-ai-teaching-poster.webp', alt: 'Faculty attending the AI-Driven Teaching Strategies programme', crop: true }
+                    { type: 'video', src: '/media/trainings/mru-fdp-ai-teaching.mp4', poster: '/media/trainings/mru-fdp-ai-teaching-poster.webp', alt: 'Presenting AI agents to faculty at the AI-Driven Teaching Strategies programme' }
                 ]
             },
             {
